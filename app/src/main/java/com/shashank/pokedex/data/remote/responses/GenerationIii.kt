@@ -1,7 +1,11 @@
 package com.shashank.pokedex.data.remote.responses
 
+import com.google.gson.annotations.SerializedName
+
 data class GenerationIii(
     val emerald: Emerald,
-    val firered-leafgreen: FireredLeafgreen,
-    val ruby-sapphire: RubySapphire
+    @SerializedName("firered-leafgreen")
+    val fireredleafgreen: FireredLeafgreen,
+    @SerializedName("ruby-sapphire")
+    val rubysapphire: RubySapphire
 )
